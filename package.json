@@ -1,0 +1,22 @@
+{
+  "name": "derejekitaw.github.io",
+  "version": "1.0.0",
+  "description": "My Porfolio page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerejeKitaw/derejekitaw.github.io.git"
+  },
+  "author": "Dereje Kitaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DerejeKitaw/derejekitaw.github.io/issues"
+  },
+  "homepage": "https://github.com/DerejeKitaw/derejekitaw.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
