@@ -1,6 +1,7 @@
-$primary-color: #444;
+// Import core styles
+@import "./core/core.scss";
 
-body{
-  background-color: $primary-color;
-  color: #fff;
-}
+
+
+
+

@@ -1,0 +1,14 @@
+// remove any defULT padding
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include background;
+  background-color: $primary-color;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
