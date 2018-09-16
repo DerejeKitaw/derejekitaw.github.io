@@ -4,9 +4,9 @@
 }
 
 body {
-  @include background;
+  @include background(0.85);
   background-color: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

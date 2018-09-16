@@ -1,55 +1,45 @@
 // Tablets & Small Laptops
 @include mediaMd {
+  body {
+    @include background(0.9);
+  }
   main {
     align-items: center;
     text-align: center;
-
     .lg-heading {
       line-height: 1;
       font-size: 3rem;
-      margin-top: 15rem;
+      margin-top: 9rem;
+      padding: 1rem;
     }
   }
-
   ul.menu-nav,
   div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
-
     &.show {
       transform: translate3d(0, 0, 0);
     }
   }
-
   .menu-nav {
     height: 70vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
-
   .menu-branding {
     height: 30vh;
     transform: translate3d(100%, 0, 0);
-
     .portrait {
       background: url('../img/portrait150x150.jpg');
       width: 150px;
       height: 150px;
     }
   }
-
   .about-info {
-    grid-template-areas:
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
-
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr;
   }
-
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }

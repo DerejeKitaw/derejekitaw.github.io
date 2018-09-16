@@ -2,7 +2,7 @@
   transition: all 0.5s ease-out;
 }
 
-@mixin background {
+@mixin background($background-opacity) {
   @if $show-home-image {
     &#bg-img {
       background: $home-image;
@@ -41,8 +41,17 @@
   }
 }
 // media Query Mixin
-@mixin mediaLg {
+@mixin mediaXl {
   @media screen and (min-width: 1171px) {
     @content;
+  }
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
